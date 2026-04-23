@@ -34,6 +34,8 @@ from __future__ import annotations
 import argparse
 import logging
 import sys
+if sys.stdout.encoding.lower() != 'utf-8':
+    sys.stdout.reconfigure(encoding='utf-8')
 import time
 
 from rich.console import Console
